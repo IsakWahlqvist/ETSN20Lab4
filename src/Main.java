@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
 	
@@ -43,8 +44,8 @@ public class Main {
 
 			// Close the reader
 			reader.close();
-		} catch(Exception e) {
-			System.out.println("Error reading file");
+		} catch(IOException e) {
+			System.out.println("Error encountered " + e.getMessage());
 		}
 		
 	}
